@@ -7,22 +7,22 @@
 
 
 
-// void replaceChar(char *s, char oldChar, char newChar) {
-//   int i;
-//   int length = strlen(s);
-//   for (i=0; i<length; i++) {
-//     if (s[i] == oldChar) {
-//       s[i] = newChar;
-//     }
-//   }
-// }
+void replaceChar(char *s, char oldChar, char newChar) {
+  int i;
+  int length = strlen(s);
+  for (i=0; i<length; i++) {
+    if (s[i] == oldChar) {
+      s[i] = newChar;
+    }
+  }
+}
 
 
 char * replaceCharCopy(const char *s, char oldChar, char newChar) {
   int length = strlen(s);
-  char *copy = (char *)malloc(sizeof(char) * length+1);
-  char *strcpy = (char *copy, const char *s);
-  replacechar(copy, oldChar, newChar);
+  char* copy = (char *)malloc(sizeof(char) * length+1);
+  copy = strcpy(copy, s);
+  replaceChar(copy, oldChar, newChar);
 return copy;
 }
 //
