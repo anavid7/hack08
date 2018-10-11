@@ -17,10 +17,10 @@ int main(int argc, char **argv) {
   char * str = (char *)malloc(sizeof(char) * size);
   strcpy(str, "All the world's a stage, and all the men and women merely players: they have their exits and their entrances; and one man in his time plays many parts, his acts being seven ages. William Shakespeare");
   str[197] = '\0';
-  removeChar(str, a);
-  // char *copy = replaceCharCopy(str, a, z);
-  // printf("%s\n", copy);
-  printf("%s\n", str);
+  //removeCharCopy(str, a);
+  char *copy = removeCharCopy(str, a);
+  printf("%s\n", copy);
+  // printf("%s\n", str);
 
 
 
